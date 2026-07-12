@@ -68,11 +68,7 @@ body {
     linear-gradient(
       90deg,
       var(--soft-blue) 0%,
-      var(--soft-blue) 12%,
-      var(--soft-pink) 35%,
-      var(--soft-white) 50%,
-      var(--soft-pink) 65%,
-      var(--soft-blue) 88%,
+      var(--soft-pink) 50%,
       var(--soft-blue) 100%
   ) 1;
   /* border-image:
