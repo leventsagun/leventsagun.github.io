@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Levent Sagun is a Research Scientist at FAIR working on AI governance, measurement, representation, alignment and failure modes in large models."
+  >
+
+  <title>Levent Sagun</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page">
+
+    <header>
+      <h1>Levent Sagun</h1>
+      <!-- <p class="subtitle">
+        Research Scientist at FAIR working on AI governance,
+        measurement, representation and model failure.
+      </p> -->
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#mentoring">Mentoring</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+      <a href="things/CV-LeventSagun.pdf">CV</a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=-iPZaBcAAAAJ">Google Scholar</a>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+
+      <p>
+        I am a Research Scientist at FAIR in Paris. I study how large 
+        models fail and whether the methods used to measure these failures 
+        actually measure what we think they do. I am particularly interested 
+        in how benchmarks and technical metrics are situated within, and help shape, AI governance frameworks.
+      </p>
+
+      <p>
+        Much of my current work centers on some kind of representation problem. 
+        I look at how datasets, benchmarks and alignment methods represent 
+        people, values and social concepts. I'm interested in how design choices 
+        determine whose views enter into a system, and how differences 
+        between communities are characterized and who or what gets left out.
+      </p>
+
+      <p>
+        A new line of upcoming work I am interested in is on the tensions between 
+        personalization and homogenization. In particular, I study how 
+        preference optimization may compress/erase plural values into a narrow range of outputs, 
+        and how this loss of diversity (or collapse) could be detected and measured. 
+        This work is still at an early stage and is mostly unpublished. 
+        If you are interested in discussing it please reach out.
+      </p>
+
+      <p>
+        My earlier work was on the mathematical foundations of deep learning including 
+        optimization, loss landscapes, over-parameterization and inductive bias. 
+        I received my Ph.D. in Mathematics from the Courant Institute at NYU and later
+        worked at EPFL and ENS Paris as a postdoctoral fellow 
+        in the Simons Collaboration on Cracking the Glass Problem.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <p>
+        The papers below fall loosely into three groups, with considerable overlap between them. 
+        A recurring question is how technical systems represent disagreement and when 
+        benchmarks, datasets or alignment methods instead obscure or collapse it.
+      </p>
+
+      <h3>Representation, participation and datasets</h3>
+      <p>
+        On who gets represented in a dataset and how: Collection, curation and participation
+        choices shape what a model can learn and what an evaluation can
+        actually show. Several of these focus specifically on speech data and queer
+        representation, a domain in which standard collection pipelines often break down.
+      </p>
+      <ul class="publication-list">
+        <li>
+          <strong>Towards Participatory Speech Dataset Curation: A Queer Case Study and Conceptual Framework.</strong>
+          Brooklyn Sheppard, Anaelia Ovalle, Adina Williams and Levent Sagun 
+          <span class="venue">
+            Interspeech 2026
+          </span>
+        </li>
+        <li>
+          <strong>Queer Inclusion in Speech Datasets: An Audit and Taxonomy of Practical Tensions.</strong>
+          Brooklyn Sheppard, Anaelia Ovalle, Adina Williams and Levent Sagun 
+          <span class="venue">
+            Interspeech 2026
+          </span>
+        </li>
+        <li>
+          <strong>The Root Shapes the Fruit: On the Persistence of Gender-Exclusive Harms in Aligned Language Models.</strong>
+          Anaelia Ovalle, Krunoslav Lehman Pavasovic, Louis Martin, Luke Zettlemoyer, Eric Michael Smith, Kai-Wei Chang, Adina Williams and Levent Sagun 
+          <span class="venue">
+            <a href="https://doi.org/10.1145/3715275.3732196"> FAccT 2025</a>
+          </span>
+        </li>
+        <li>
+          <strong>On the Lack of Queer Voices in Diverse Speech Datasets.</strong>
+          Brooklyn Sheppard, Anaelia Ovalle, Adina Williams and Levent Sagun 
+          <span class="venue">
+            <a href="https://lppohl.github.io/wi-workshop.github.io/content/0-program.html">SSaLM 2025</a> and 
+            <a href="https://sites.google.com/aimpower.org/speech-ai-workshop/home">Speech AI for All Workshop at CHI 2025</a>
+          </span>
+        </li>
+        <li>
+          <strong>On the Role of Speech Data in Reducing Toxicity Detection Bias.</strong>
+          Samuel Bell, Mariano Coria Meglioli, Megan Richards, Eduardo Sánchez, Christophe Ropers, Skyler Wang, Adina Williams, Levent Sagun and Marta R. Costa-jussà 
+          <span class="venue">
+            <a href="https://aclanthology.org/2025.naacl-long.67/">NAACL 2025</a> - 
+            <a href="https://github.com/facebookresearch/seamless_communication/blob/main/src/seamless_communication/cli/toxicity/mutox_group_annotations/README.md">Dataset</a>
+          </span>
+        </li>
+      </ul>
+
+      <h3>Measurement and validity</h3>
+      <p>
+        On the validity of benchmarks: do metrics actually measure
+        what they claim to measure? Some propose new ways to test validity
+        directly, others identify where an existing measure breaks down or
+        is used beyond the conditions under which it remains meaningful.
+      </p>
+      <ul class="publication-list">
+        <li>
+          <strong>Automated Bias Blind Spots: Examining Stereotype Associations in VLM-as-a-Judge Paradigms.</strong>
+          Rachel Hong, Anaelia Ovalle, Megan Ung, Evangelia Spiliopoulou, Levent Sagun, Adina Williams and Candace Ross 
+          <span class="venue">
+            <a href="https://dl.acm.org/doi/10.1145/3805689.3806459">FAccT 2026</a>
+          </span>
+        </li>
+        <li>
+          <strong>Issues in Measuring the Fairness of Social Representation in Synthetic (Speech) Data.</strong>
+          Arjun Subramonian, Brooklyn Sheppard and Levent Sagun 
+          <span class="venue">
+            <a href="https://synthetic-data-workshop.github.io/papers">Synthetic Data Workshop at Aarhus Decennial Conference 2025</a>
+          </span>
+        </li>
+        <li>
+          <strong>A Differentiable Rank-Based Objective for Better Feature Learning.</strong>
+          Krunoslav Lehman Pavasovic, David Lopez-Paz, Giulio Biroli and Levent Sagun 
+          <span class="venue"> <a href="https://openreview.net/forum?id=KiN7g8mf9N">ICLR 2025</a></span>
+        </li>
+        <li>
+          <strong>Reassessing the Validity of Spurious Correlations Benchmarks.</strong>
+          Samuel J. Bell, Diane Bouchacourt and Levent Sagun 
+          <span class="venue"> <a href="https://arxiv.org/abs/2409.04188">Preprint 2024</a></span>
+        </li>
+        <li>
+          <strong>On Generated vs Collected Data.</strong>
+          Levent Sagun, Kartik Ahuja, Elvis Dohmatob and Julia Kempe 
+          <span class="venue">
+            <a href="https://globalaicultures.github.io/">
+              Global AI Cultures Workshop at ICLR 2024
+            </a>
+          </span>
+        </li>
+        <li>
+          <strong>Weisfeiler and Leman Go Measurement Modeling: Probing the Validity of the WL Test.</strong>
+          Arjun Subramonian, Adina Williams, Maximilian Nickel, Yizhou Sun and Levent Sagun 
+          <span class="venue"><a href="https://arxiv.org/abs/2307.05775">Preprint 2023</a></span>
+        </li>
+        <li>
+          <strong>Fairness Indicators for Systematic Assessments of Visual Feature Extractors.</strong>
+          Priya Goyal, Adriana Romero Soriano, Caner Hazirbas, Levent Sagun and Nicolas Usunier 
+          <span class="venue"> <a href="https://doi.org/10.1145/3531146.3533074">FAccT 2022</a></span>
+        </li>
+      </ul>
+
+      <h3>Model failure modes</h3>
+      <p>
+        These papers look at specific ways large models fail: them relying on
+        spurious signals, being brittle to superficial changes,
+        amplifying bias already present in training data or 
+        generating inconsistent reasoning across languages.
+      </p>
+      <ul class="publication-list">
+        <li>
+          <strong>LLM Knowledge Is Brittle: Truthfulness Representations Rely on Superficial Resemblance.</strong>
+          Patrick Haller, Mark Ibrahim, Polina Kirichenko, Levent Sagun and Samuel J. Bell
+          <span class="venue"><a href="https://arxiv.org/abs/2510.11905">COLM 2026</a></span>
+        </li>
+        <li>
+          <strong>Learning the Wrong Lessons: Syntactic-Domain Spurious Correlations in Language Models.</strong>
+          Chantal Shaib, Vinith M. Suriyakumar, Levent Sagun, Byron C. Wallace and Marzyeh Ghassemi
+          <span class="venue"><a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/116066">NeurIPS 2025, Spotlight</a></span>
+        </li>
+        <li>
+          <strong>Beg to Differ: Understanding Reasoning-Answer Misalignment Across Languages.</strong>
+          Anaelia Ovalle, Candace Ross, Sebastian Ruder, Adina Williams, Karen Ullrich, Mark Ibrahim and Levent Sagun
+          <span class="venue"><a href="https://arxiv.org/abs/2512.22712">Multilingual Representation Learning Workshop at EMNLP 2025</a></span>
+        </li>
+        <li>
+          <strong>An Effective Theory of Bias Amplification.</strong>
+          Arjun Subramonian, Samuel J. Bell, Levent Sagun and Elvis Dohmatob
+          <span class="venue"> <a href="https://iclr.cc/virtual/2025/poster/29400">ICLR 2025</a></span>
+        </li>
+        <li>
+          <strong>Simplicity Bias Leads to Amplified Performance Disparities.</strong>
+          Samuel J. Bell and Levent Sagun
+          <span class="venue"><a href="https://doi.org/10.1145/3593013.3594003">FAccT 2023</a></span>
+        </li>
+      </ul>
+
+      <p class="full-list">
+        The complete publication list also includes my earlier work on
+        optimization, loss landscapes, over-parameterization and
+        inductive bias: see
+        <a href="things/CV-LeventSagun.pdf">CV</a>
+        or
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=-iPZaBcAAAAJ">Google Scholar</a>
+      </p>
+    </section>
+
+    <section id="mentoring">
+      <h2>Mentoring</h2>
+
+      <p>
+        I work with Ph.D. students, postdoctoral researchers and interns
+        on fairness, representation, measurement and the social/institutional 
+        questions raised by AI systems.
+      </p>
+
+      <div class="mentoring-group">
+        <h3>Ph.D. interns</h3>
+        <ul>
+          <li>Nasanbayar Ulzii-Orshikh, 2026</li>
+          <li>Chantal Shaib, 2025</li>
+          <li>Brooklyn Sheppard, 2024</li>
+          <li>Arjun Subramonian, 2022 and 2024</li>
+          <li>Elia Ovalle, 2023</li>
+          <li>Sam Bell, 2021</li>
+          <li>Berfin Şimşek, 2020</li>
+        </ul>
+      </div>
+
+      <div class="mentoring-group">
+        <h3>Ph.D. students</h3>
+        <ul>
+          <li>Nicole Osayande, 2026-today</li>
+          <li>Krunoslav Lehman Pavasovic, 2024-2025</li>
+          <li>Stéphane d'Ascoli, 2019-2022</li>
+        </ul>
+      </div>
+
+      <div class="mentoring-group">
+        <h3>Postdoctoral researchers</h3>
+        <ul>
+          <li>Sam Bell, 2022-2023</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <!-- <div class="mentoring-group"> -->
+        <p>
+          I have taught courses in probability, statistics, machine learning 
+          and data science at NYU's Courant Institute and Center for Data Science. 
+          I have also given invited lectures and short courses on deep learning and AI 
+          at EM Normandie, ENS-PSL and Les Houches.
+        </p>
+      <!-- </div> -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>Email: leventsagun@{gmail or meta}.com </p>
+
+      <p class="contact-links">
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=-iPZaBcAAAAJ">Google Scholar</a>
+        <a href="https://github.com/leventsagun">GitHub</a>
+        <a href="things/CV-LeventSagun.pdf">CV</a>
+      </p>
+    </section>
+
+    <footer>
+      Last updated July 2026.
+    </footer>
+
+  </main>
+</body>
+</html>
