@@ -4,7 +4,8 @@
 
   --text: #28232d;
   --muted: #5d5663;
-  --line: #ded4de;
+  /* --line: #ded4de; */
+  --line: #e3d2dc;
 
   --soft-blue: #b9ddea;
   --soft-pink: #edbfd2;
@@ -66,8 +67,13 @@ body {
   border-image:
     linear-gradient(
       90deg,
-      var(--soft-blue),
-      var(--soft-pink)
+      var(--soft-blue) 0%,
+      var(--soft-blue) 12%,
+      var(--soft-pink) 35%,
+      var(--soft-white) 50%,
+      var(--soft-pink) 65%,
+      var(--soft-blue) 88%,
+      var(--soft-blue) 100%
   ) 1;
   /* border-image:
     linear-gradient(
@@ -232,9 +238,9 @@ section:first-of-type {
 
 .publication-list li {
   max-width: 77ch;
-  margin-bottom: 19px;
-  padding-bottom: 19px;
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+  /* padding-bottom: 10px; */
+  /* border-bottom: 1px solid var(--line); */
 }
 
 .publication-list li:last-child {
