@@ -30,13 +30,20 @@ html {
 
 body {
   margin: 0;
-  background:
+  /* background: var(--page); */
+  background: linear-gradient(
+    135deg,
+    #eef5f7 0%,
+    #f3eff3 52%,
+    #f7eff2 100%
+  );
+  /* background:
     linear-gradient(
       135deg,
       #eaf6fa 0%,
       var(--page) 45%,
       #f9e9f0 100%
-    );
+    ); */
   color: var(--text);
   font-family:
     -apple-system,
@@ -59,13 +66,20 @@ body {
   border-image:
     linear-gradient(
       90deg,
+      var(--soft-blue),
+      var(--soft-pink)
+  ) 1;
+  /* border-image:
+    linear-gradient(
+      90deg,
       var(--soft-blue) 0 22%,
       var(--soft-pink) 22% 44%,
       var(--soft-white) 44% 56%,
       var(--soft-pink) 56% 78%,
       var(--soft-blue) 78% 100%
-    ) 1;
+    ) 1; */
   box-shadow: 0 0 30px rgb(58 42 62 / 7%);
+  /* box-shadow: 0 8px 30px rgb(58 42 62 / 5%); */
 }
 
 header {
@@ -197,12 +211,13 @@ section:first-of-type {
   padding: 4px 12px 5px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background:
+  background: #f7f3f6;
+  /* background:
     linear-gradient(
       90deg,
       var(--blue-wash),
       var(--pink-wash)
-    );
+    ); */
   font-size: 1rem;
   font-weight: 720;
   letter-spacing: 0.01em;
